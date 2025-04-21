@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+
+/* @import 'flowbite/dist/flowbite'; */
+
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -7,9 +13,47 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  /* @apply bg-white dark:bg-gray-950; */
+  @apply bg-teal-900;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+  @media (prefers-color-scheme: light) {
+    color-scheme: light;
   }
+
+  overflow-x: hidden;
+}
+
+.homepage-headshot {
+  width: 600px;
+}
+
+.homepage-social-icon {
+  width: 50px;
+}
+
+.homepage-skill-icon {
+  width: 40px;
+}
+
+.homepage-carousel-img {
+  /* width: 500px; */
+}
+
+.embla__viewport {
+  overflow: hidden;
+  padding: 0 10%; /* Peek left and right */
+}
+
+.embla__container {
+  display: flex;
+  gap: 1rem; /* Optional: space between slides */
+}
+
+.embla__slide {
+  flex: 0 0 80%; /* Each slide takes up 80% of the width */
+  min-width: 0;
+}
+
+.embla{
+  padding: 0 18%;
 }
