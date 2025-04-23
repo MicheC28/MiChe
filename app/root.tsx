@@ -6,6 +6,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import NavBar from "./NavBar/NavBar";
+import { FlickeringGrid } from "components/magicui/flickering-grid";
 
 import type { Route } from "./+types/root";
 import "./app.css";
@@ -42,7 +44,25 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+
+  return (
+    // <Outlet />
+
+    <div className="relative min-h-screen overflow-hidden">
+      <NavBar />
+
+      <FlickeringGrid
+        className="absolute inset-0 z-0"
+        squareSize={4}
+        gridGap={10}
+        color="#c587b8"
+        maxOpacity={0.6}
+        flickerChance={0.4}
+      />
+
+      <Outlet />
+    </div>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

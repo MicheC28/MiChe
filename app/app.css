@@ -206,6 +206,16 @@ body {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* Custom styles in your CSS file */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
