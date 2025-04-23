@@ -12,29 +12,50 @@ import RR_project from './RainyRiches.png';
 import clipboard_project from './digitalClipboard.png';
 import alertcase_project from './AlertCase2.png';
 import windsorhousing_project from './windsor.jpeg';
+import cs_logo from './cs_logo.png';
+import react_logo from './react_logo.png';
+import angular_logo from './angular_logo.png';
+import ts_logo from './ts_logo.png';
 import portfolio from './PortfolioSite_1.png'
+import tailwind_logo from './tailwind_logo.svg';
 // import { Carousel } from "flowbite-react";
 // import '../../node_modules/flowbite/dist/flowbite.css';
 import useEmblaCarousel from 'embla-carousel-react'
+import Marquee from "react-fast-marquee";
+import { TypingAnimation } from "../../components/magicui/typing-animation";
 
 
-function HomePage() {
+
+type HomePageProps = {
+    className?: string;
+}
+
+function HomePage({ className }: HomePageProps) {
 
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+
     useEffect(() => {
         if (emblaApi) {
             console.log(emblaApi.slideNodes()) // Access API
         }
     }, [emblaApi])
 
-
     return (
-        <div>
-            <div className="flex md:flex-row md:justify-evenly items-center m-20">
-                <img src={headshot} className="homepage-headshot" />
+        <div className="relative flex flex-col z-20 gap-y-5">
+            <div className="h-15"></div>
 
-                <div className="flex flex-col justify-evenly">
-                    <p className="text-xl text-emerald-200 text-center" >About me</p>
+            <div className="flex flex-col justify-evenly items-center mx-20 gap-y-5">
+
+                <div className=" bg-black/60 p-6 rounded-xl w-full flex flex-col justify-center items-center">
+                    <div>
+                        <img src={headshot} className="w-100" />
+                        <TypingAnimation className="text-xl text-rose-300 font-bold">Michelle Chen</TypingAnimation>
+                        <TypingAnimation className="text-white text-base"> Computer Engineering @UWaterloo</TypingAnimation>
+                    </div>
+
+                </div>
+                <div className="flex flex-col justify-evenly  bg-black/60 p-6 rounded-xl w-full">
+                    <p className="text-xl text-emerald-200 text-center font-bold" >About me</p>
                     <p className="text-base text-white m-5" >
 
                         I'm a passionate Computer Engineering student at the University of Waterloo. I'm interested in designing software and hardware for applications that allow for better connection between the physical and technological world.
@@ -42,67 +63,170 @@ function HomePage() {
                         I've worked with web development, live data processing, and embedded development with STM32 and Arduino .
                         <br /><br />
                         In my spare time, I love working on my personal projects, painting and eating good food.😊
-
-
                     </p>
 
-                    <div className="flex md:flex-row md:justify-evenly">
-                        <img src={linkedin_logo} className="homepage-social-icon" />
-                        <img src={github_logo} className="homepage-social-icon" />
-                        <img src={insta_logo} className="homepage-social-icon" />
+                    <div className="flex md:flex-row flex-col justify-evenly md:gap-x-5 gap-x-0 gap-y-5">
+                        <a href="somethere" className="border-4 border-teal-950 bg-teal-950 hover:border-emerald-200 hover:bg-emerald-200 p-2 rounded-xl transition duration-200 flex flex-row justify-center">
+                            <img src={linkedin_logo} className="homepage-social-icon" />
+                        </a>
+
+                        <a href="somethere" className="bg-teal-950 border-4 border-teal-950 hover:border-emerald-200 hover:bg-emerald-200 p-2 rounded-xl transition duration-200 flex flex-row justify-center">
+                            <img src={github_logo} className="homepage-social-icon" />
+                        </a>
+
+                        <a href="somethere" className="border-4 bg-teal-950 border-teal-950 hover:border-emerald-200 hover:bg-emerald-200 p-2 rounded-xl transition duration-200 flex flex-row justify-center">
+                            <img src={insta_logo} className="homepage-social-icon" />
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div className="flex md:flex-col md:justify-evenly items-center m-20 bg-emerald-200 p-8">
+            <div className="flex flex-col md:justify-evenly items-center mx-20 bg-black/60 p-8 rounded-xl gap-y-5">
 
-                <p className="text-xl text-teal-900 text-center">skills</p>
+                <p className="text-xl text-emerald-200 text-center font-bold">Skills</p>
 
-                <div className="flex md:flex-row w-xl justify-evenly">
-                    <ul className="list-disc list-inside">
-                        <li>heere</li>
-                        <li>heere</li>
-                    </ul>
-                    <ul className="list-disc list-inside">
-                        <li>heere</li>
-                        <li>heere</li>
-                    </ul>
+
+                <ul className="list-disc list-inside text-white break-words block text-wrap">
+                    <li className="break-words whitespace-normal"><b>Languages</b>: C++, C#, Python, HTML/CSS, Javascript/Typescript, SQL, RISC-V, MatLab</li>
+                    <li className="break-words whitespace-normal"><b>Libraries/Frameworks</b>: ASP.NET, React.js, Angular.js, Tailwind CSS, Flowbite, MagicUI, scikit-learn, Pandas, Matplotlib  </li>
+                    <li className="break-words whitespace-normal"><b>Firmware</b>: STM, Arduino, I2C, ADC/DAC, DMA</li>
+                </ul>
+
+                <div className="">
+                    <Marquee gradient={true} gradientColor="#001B20" autoFill={true} gradientWidth={100} className="w-full" >
+                        <div>
+                            <img src={css_logo} className="size-20" />
+                        </div>
+                        <div>
+                            <img src={html_logo} className="size-20" />
+                        </div>
+                        <div>
+                            <img src={cpp_logo} className="size-20" />
+                        </div>
+                        <div>
+                            <img src={python_logo} className="size-20" />
+                        </div>
+                        <div>
+                            <img src={js_logo} className="size-20" />
+                        </div>
+                        <div>
+                            <img src={cs_logo} className="size-20" />
+                        </div>
+                        <div>
+                            <img src={react_logo} className="size-20" />
+                        </div>
+                        <div>
+                            <img src={angular_logo} className="size-20" />
+                        </div>
+                        <div>
+                            <img src={ts_logo} className="size-20" />
+                        </div>
+                        <div>
+                            <img src={tailwind_logo} className="size-20" />
+                        </div>
+                    </Marquee>
+
                 </div>
 
-                <div className="flex md:flex-row justify-evenly w-xl p-5">
-                    <img src={html_logo} className="homepage-skill-icon" />
-                    <img src={css_logo} className="homepage-skill-icon" />
-                    <img src={js_logo} className="homepage-skill-icon" />
-                    <img src={cpp_logo} className="homepage-skill-icon" />
-                    <img src={python_logo} className="homepage-skill-icon" />
+
+            </div>
+
+
+            <div className="flex flex-col justify-evenly mx-20 gap-y-5">
+                <p className="text-xl text-center text-emerald-200 bg-black/60 p-4 rounded-xl font-bold">Projects</p>
+
+                <div className="embla__viewport rounded-xl heigh" ref={emblaRef}>
+                    <div className="embla__container hover:cursor-grab">
+                        <div className="embla__slide h-100 w-auto flex flex-row justify-center ">
+
+                            <a href="something" className="homepage-carousel-link w-fit h-fit relative">
+                                <img src={RR_project} className="w-auto h-auto rounded-xl" />
+                                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
+                                    <p className="text-white opacity-100 text-xl text-center ">
+                                        Rainy Riches Game
+                                    </p>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+
+
+                        <div className="embla__slide h-100 w-auto flex flex-row justify-center ">
+                            <a href='something' className="homepage-carousel-link w-fit h-fit relative">
+                                <img src={alertcase_project} className="w-auto h-auto rounded-xl" />
+
+                                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
+                                    <p className="text-white opacity-100 text-xl text-center ">
+                                        Alerting Medication Case
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div className="embla__slide h-100 w-auto flex flex-row justify-center ">
+                            <a href="something" className="homepage-carousel-link w-fit h-fit relative">
+                                <img src={clipboard_project} className="w-auto h-auto rounded-xl" />
+                                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
+                                    <p className="text-white opacity-100 text-xl text-center ">
+                                        Digital Clipboard Extension
+                                    </p>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        <div className="embla__slide h-100 w-auto flex flex-row justify-center">
+
+                            <a href='something' className="homepage-carousel-link w-fit h-fit relative ">
+                                <img src={windsorhousing_project} className="w-full xl h-auto p-0 rounded-xl" />
+
+                                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
+                                    <p className="text-white opacity-100 text-xl">
+                                        Windsor Housing Predictor
+                                    </p>
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                    </div>
                 </div>
 
             </div>
-            {/* 
-            <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 m-20">
-                <Carousel>
-                    <img src={RR_project} className="w-auto h-full mx-auto" />
-                    <img src={alertcase_project} className="w-auto h-full mx-auto" />
-                    <img src={windsorhousing_project} className="w-auto h-full mx-auto" />
-                    <img src={clipboard_project} className="w-auto h-full mx-auto" />
-                    <img src={portfolio} className="w-auto h-full mx-auto" />
-                </Carousel>
-            </div> */}
 
-            <div className="embla m-20 heigh" ref={emblaRef}>
-                <div className="embla__container">
-                    <div className="embla__slide h-100 w-auto flex flex-row justify-center">
-                        <img src={RR_project} className="w-auto h-auto" />
-                    </div>
-                    <div className="embla__slide h-100 w-auto flex flex-row justify-center">
-                        <img src={alertcase_project} className="w-auto h-auto" />
-                    </div>
-                    <div className="embla__slide h-100 w-auto flex flex-row justify-center">
-                        <img src={windsorhousing_project} className="w-auto h-auto" />
-                    </div>
-                </div>
+            <div className="mx-20  bg-black/60 p-16 rounded-xl flex flex-col justify-evenly gap-y-5">
+                <p className="text-xl text-emerald-200 text-center font-bold">Work Experience</p>
+
+                <ol className="relative border-s border-teal-900 dark:border-emerald-200">
+                    <li className="mb-10 ms-4">
+                        <div className="absolute w-3 h-3 bg-emerald-200 rounded-full mt-1.5 -start-1.5 border border-teal-900"></div>
+                        <time className="mb-1 text-sm font-normal leading-none text-emerald-200">Jan-Apr 2025</time>
+                        <h3 className="text-lg font-semibold text-white">Software Developer Co-op @ Rocket Innovation Studio</h3>
+                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Designed and implemented real-time audio signal processing systems using STM32 microcontrollers, utilizing ADC with DMA, timers, and I2C to capture and transmit microphone signals. Handled and processed large-scale sensor data streams using Pandas and Matplotlib, applying low-pass and moving average filters to denoise live data with 80% noise reduction.</p>
+
+                    </li>
+                    <li className="mb-10 ms-4">
+                        <div className="absolute w-3 h-3 bg-emerald-200 rounded-full mt-1.5 -start-1.5 border border-teal-900"></div>
+                        <time className="mb-1 text-sm font-normal leading-none text-emerald-200">May-Aug 2024</time>
+                        <h3 className="text-lg font-semibold text-white">Research Assistant @ Pearl Sullivan Engineering IDEAs Clinic</h3>
+                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Designed and implemented real-time audio signal processing systems using STM32 microcontrollers, utilizing ADC with DMA, timers, and I2C to capture and transmit microphone signals. Handled and processed large-scale sensor data streams using Pandas and Matplotlib, applying low-pass and moving average filters to denoise live data with 80% noise reduction.</p>
+
+                    </li>
+                    <li className="ms-4">
+                        <div className="absolute w-3 h-3 bg-emerald-200 rounded-full mt-1.5 -start-1.5 border border-teal-900"></div>
+                        <time className="mb-1 text-sm font-normal leading-none text-emerald-200">Jun-Aug 2022</time>
+                        <h3 className="text-lg font-semibold text-white">Line Cook @ Boston Pizza</h3>
+                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Played Papa's Pizzeria IRL.</p>
+
+                    </li>
+                </ol>
             </div>
 
+            <div className="h-15"></div>
         </div>
     )
 }
