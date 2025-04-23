@@ -154,34 +154,41 @@ export default function BubbleGrid() {
 
     // Grid items as defined in the original HTML
     const gridItems: GridItem[] = [
+
+        {
+            type: 'text',
+            text: 'to do list application because I have the memory of a goldfish'
+
+        },
+
+        {
+            type: 'text',
+            text: 'background music app so your life is like a movie'
+        },
+
+        {
+            type: 'text',
+            text: 'overly complicated capta'
+        },
+
         { type: 'empty' },
         { type: 'empty' },
         { type: 'empty' },
         { type: 'empty' },
-        { type: 'empty' },
-        { type: 'empty' },
+
+        {
+            type: 'link',
+            href: 'Projects-page-AlertMed.html',
+            img: medicationcase_project,
+            imgAlt: 'Alert Case',
+            isCenter: true
+        },
+
         {
             type: 'link',
             href: 'Projects-page-DigitalClip.html',
             img: clipboard_project,
             imgAlt: 'Digital Clipboard'
-        },
-        {
-            type: 'link',
-            href: 'Projects-page-AlertMed.html',
-            img: medicationcase_project,
-            imgAlt: 'Alert Case'
-        },
-        {
-            type: 'text',
-            text: 'to do list application because I have the memory of a goldfish',
-            isCenter: true
-        },
-        { type: 'empty' },
-        { type: 'empty' },
-        {
-            type: 'text',
-            text: 'a truly functioning alarm clock for 8:30am lectures'
         },
         {
             type: 'link',
@@ -195,25 +202,35 @@ export default function BubbleGrid() {
             img: rr_project,
             imgAlt: 'Rainy Riches'
         },
+
+
+        {
+            type: 'text',
+            text: 'wordle but midterms studying'
+        },
+
+        {
+            type: 'text',
+            text: 'a truly functioning alarm clock for 8:30am lectures'
+        },
+
         {
             type: 'text',
             text: 'a overly complicated tip calculator'
         },
 
+
         { type: 'empty' },
         { type: 'empty' },
-        {
-            type: 'text',
-            text: 'overly complicated capta'
-        },
-        {
-            type: 'text',
-            text: 'wordle but midterms studying'
-        },
-        {
-            type: 'text',
-            text: 'background music app so your life is like a movie'
-        },
+
+        { type: 'empty' },
+        { type: 'empty' },
+
+
+        { type: 'empty' },
+        { type: 'empty' },
+
+
         { type: 'empty' }
     ];
 
@@ -229,7 +246,7 @@ export default function BubbleGrid() {
                 onMouseMove={handleMouseMove}
 
             >
-                <div className="grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 150px)', gridTemplateRows: 'repeat(3, 150px)', gap: '100px', padding: '10px', width: 'max-content' }}>
+                <div className="grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 150px)', gridTemplateRows: 'repeat(3, 150px)', gap: '120px', padding: '10px', width: 'max-content' }}>
                     {gridItems.map((item, index) => {
                         // Render different content based on item type
                         let content = null;
