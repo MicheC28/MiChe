@@ -49,7 +49,6 @@ export default function App() {
     // <Outlet />
 
     <div className="relative min-h-screen overflow-hidden">
-      <NavBar />
 
       <FlickeringGrid
         className="absolute inset-0 z-0"
@@ -59,6 +58,8 @@ export default function App() {
         maxOpacity={0.6}
         flickerChance={0.4}
       />
+
+      <NavBar />
 
       <Outlet />
     </div>

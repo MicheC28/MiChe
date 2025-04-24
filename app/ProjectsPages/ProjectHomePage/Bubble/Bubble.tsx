@@ -274,7 +274,7 @@ export default function BubbleGrid() {
                             <div
                                 key={index}
                                 ref={setItemRef(index)}
-                                className="grid-item border-transparent border-2 bg-teal-900 text-white text-center hover:text-emerald-200 hover:border-emerald-200 "
+                                className="grid-item border-transparent border-4 bg-teal-900 text-white text-center hover:text-emerald-200 hover:border-emerald-200 "
                                 id={item.isCenter ? "center" : ""}
                                 style={{
                                     width: '250px',
