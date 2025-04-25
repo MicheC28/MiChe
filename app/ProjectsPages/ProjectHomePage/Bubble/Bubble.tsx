@@ -178,7 +178,7 @@ export default function BubbleGrid() {
 
         {
             type: 'link',
-            href: 'Projects-page-AlertMed.html',
+            href: '/projects/alertingmedicationcase',
             img: medicationcase_project,
             imgAlt: 'Alert Case',
             isCenter: true
@@ -186,19 +186,19 @@ export default function BubbleGrid() {
 
         {
             type: 'link',
-            href: 'Projects-page-DigitalClip.html',
+            href: '/projects/digitalclipboard',
             img: clipboard_project,
             imgAlt: 'Digital Clipboard'
         },
         {
             type: 'link',
-            href: 'Projects-page-WindsorHousing.html',
+            href: '/projects/windsorhousing',
             img: windsorhousign_project,
             imgAlt: 'Windsor Housing'
         },
         {
             type: 'link',
-            href: 'Projects-page-RainyRiches.html',
+            href: '/projects/rainyriches',
             img: rr_project,
             imgAlt: 'Rainy Riches'
         },
@@ -235,7 +235,7 @@ export default function BubbleGrid() {
     ];
 
     return (
-        <div className="h-120 overflow-hidden mx-20 bg-black/60 md:w-4/5 rounded-xl">
+        <div className="h-120 overflow-hidden mx-20 bg-black/60 md:w-4/5 w-1/6 rounded-xl">
             <div
                 className="container hide-scrollbar cursor-grab overflow-auto h-full"
                 id="items-container"

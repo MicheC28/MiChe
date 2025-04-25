@@ -154,7 +154,7 @@ function HomePage({ className }: HomePageProps) {
                         <div className="embla__container hover:cursor-grab">
                             <div className="embla__slide h-100 w-auto flex flex-row justify-center ">
 
-                                <a href="something" className="homepage-carousel-link w-fit h-fit relative">
+                                <a href="/projects/rainyriches" className="homepage-carousel-link w-fit h-fit relative">
                                     <img src={RR_project} className="w-auto h-auto rounded-xl" />
                                     <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
                                         <p className="text-white opacity-100 text-xl text-center ">
@@ -169,7 +169,7 @@ function HomePage({ className }: HomePageProps) {
 
 
                             <div className="embla__slide h-100 w-auto flex flex-row justify-center ">
-                                <a href='something' className="homepage-carousel-link w-fit h-fit relative">
+                                <a href='/projects/alertingmedicationcase' className="homepage-carousel-link w-fit h-fit relative">
                                     <img src={alertcase_project} className="w-auto h-auto rounded-xl" />
 
                                     <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
@@ -181,7 +181,7 @@ function HomePage({ className }: HomePageProps) {
                             </div>
 
                             <div className="embla__slide h-100 w-auto flex flex-row justify-center ">
-                                <a href="something" className="homepage-carousel-link w-fit h-fit relative">
+                                <a href="/projects/digitalclipboard" className="homepage-carousel-link w-fit h-fit relative">
                                     <img src={clipboard_project} className="w-auto h-auto rounded-xl" />
                                     <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
                                         <p className="text-white opacity-100 text-xl text-center ">
@@ -195,7 +195,7 @@ function HomePage({ className }: HomePageProps) {
 
                             <div className="embla__slide h-100 w-auto flex flex-row justify-center">
 
-                                <a href='something' className="homepage-carousel-link w-fit h-fit relative ">
+                                <a href='/projects/windsorhousing' className="homepage-carousel-link w-fit h-fit relative ">
                                     <img src={windsorhousing_project} className="w-full xl h-auto p-0 rounded-xl" />
 
                                     <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">

@@ -16,16 +16,19 @@ function NavBar() {
                         </li>
                         <li className="relative group">
                             <a href="/projects" className="block text-white rounded-sm  hover:text-emerald-200 p-0">Projects</a>
-                            <div id="dropdownNavbar" className="z-15 hidden group-hover:block absolute -left-7 top-full font-normal bg-teal-700 rounded-lg shadow-sm w-30">
+                            <div id="dropdownNavbar" className="z-15 hidden group-hover:block absolute -left-7 top-full font-normal bg-teal-700 rounded-lg shadow-sm w-40">
                                 <ul className="py-2 text-sm text-white" aria-labelledby="dropdownLargeButton">
                                     <li>
-                                        <a href="#" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                        <a href="/projects/digitalclipboard" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Digital Clipboard</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                        <a href="/projects/alertingmedicationcase" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Alerting Medication Case</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                        <a href="/projects/windsorhousing" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Windsor Housing Prediction Model</a>
+                                    </li>
+                                    <li>
+                                        <a href="/projects/rainyriches" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Rainy Riches Game</a>
                                     </li>
                                 </ul>
                             </div>
