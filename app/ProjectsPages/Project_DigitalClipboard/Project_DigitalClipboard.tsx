@@ -2,11 +2,19 @@ import demo_pic from "./digitalClipboardDemo1.png";
 import github_icon from "../../HomePage/github_logo.png";
 import demo_vid from "./DigitalClipboardDemo.gif";
 import clipboard from "./digitalClipboard.png";
+import { Breadcrumb, BreadcrumbItem } from "flowbite-react";
+// import {HiHome} from "react-icons/hi";
+import { RiComputerLine } from "react-icons/ri";
+import ProjectBreadcrumb from "../Project_Breadcrumb/projectBreadcrumb";
+
 
 function ProjectDigitalClipboard() {
     return (
-        <div className="relative z-10">
-            <div className="h-20"></div>
+        <div className="relative z-10 flex flex-col gap-5">
+            <div className="h-15"></div>
+
+            <ProjectBreadcrumb projectName={"Digital Clipboard"} />
+
 
             <div className="mx-20 bg-black/60 rounded-xl flex flex-col justify-evenly items-center gap-y-5 p-8">
                 <p className="text-xl text-emerald-200 font-bold">
