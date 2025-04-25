@@ -27,7 +27,7 @@ function ProjectDigitalClipboard() {
 
                 <img src={demo_pic} className="md:w-2/3 h-auto rounded-xl" />
 
-                <ul className="text-white text-base list-disc mx-30">
+                <ul className="text-white text-base list-disc md:mx-30">
                     <li>Created a Chrome extension that allows users to keep track of important sites and accompanying notes.</li>
                     <li>Used HTML5 and CSS3 to create an intuitive user interface as well as a JavaScript program that notes down the URL of the current tab with the click of a button.</li>
                     <li>Key aspects include the use of DOM to take input from HTML elements, the use of arrays to store URLs and sidenotes, and manipulation of the browser's local storage.</li>
@@ -39,7 +39,7 @@ function ProjectDigitalClipboard() {
 
                 <img src={demo_vid} className="w-2/3 rounded-xl" />
 
-                <p className="text-white text-base mx-30">
+                <p className="text-white text-base md:mx-30">
                     The Digital Clipboard helps keep a record of different sites and notes when doing research online.<br /><br />
 
                     As the user is reading through an article or site, they can keep notes by entering them in the text bar. Once they've noted everything they want to note, they click the 'ADD' button to create a new list item on the digital clipboard. The new list item includes the notes followed by the URL of the current site.
