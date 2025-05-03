@@ -3,13 +3,55 @@ import { Card } from "flowbite-react";
 import colourvision from "./MiChe_ColourVision.jpg";
 import minis from "./MiChe_Mini_All.jpg";
 import cityofroses from "./MiChe_CityOfRoses.jpg";
-import iteration1 from "./MiChe_Iteration1_For-Gifting.jpg";
+import iteration1 from "./MiChe_Iteration1_Wall-Mount.jpg";
 import tempinst from "./MiChe_Temporary-Instance.jpg";
 import { color } from "framer-motion";
 
 
 
 export default function MiCheHomePage() {
+
+    const paintings = [
+        {
+            imgAlt: "Four arcylic paintings of red flowers",
+            imgSrc: minis,
+            type: "Collection",
+            title: "Minis Collection - 2024",
+            quote: "test test"
+        },
+
+        {
+            imgAlt: "",
+            imgSrc: cityofroses,
+            type: "Piece",
+            title: "City of Roses - 2023",
+            quote: "A love letter to my hometown."
+        },
+
+        {
+            imgAlt: "",
+            imgSrc: colourvision,
+            type: "Piece",
+            title: "Colour Vision - 2020",
+            quote: "Colour to the horizon."
+        },
+
+        {
+            imgAlt: "",
+            imgSrc: iteration1,
+            type: "Collection",
+            title: "Iteration 1 Collection - 2023",
+            quote: "Organic growth characterized with gold and flowing ink."
+        },
+
+        {
+            imgAlt: "",
+            imgSrc: tempinst,
+            type: "Piece",
+            title: "Temporary Instance - 2023",
+            quote: "Made in a Moment."
+        },
+    ]
 
 
     return (
@@ -30,88 +72,34 @@ export default function MiCheHomePage() {
             </div>
 
             <div className="mx-20 bg-black/60 rounded-xl flex md:flex-row flex-col gap-5 p-8 flex-wrap justify-center">
-                <Card
-                    className="max-w-sm bg-rose-300 border-none"
-                    imgAlt="Meaningful alt text for an image that is not purely decorative"
-                    imgSrc={minis}
-                >
-                    <h5 className="text-2xl font-bold tracking-tight text-rose-900">
-                        Minis Collection - 2024
-                    </h5>
-                    <p className="font-normal text-gray-700">
-                        "Vibrant pieces the fit in the palm of your hand."
-                    </p>
 
-                    <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href='#'>
-                        View Collection
-                    </a>
 
-                </Card>
+                {paintings.map((painting) => (
+                    <Card
+                        className="max-w-sm bg-rose-300 border-2 border-transparent hover:border-white transition duration-300 "
+                        imgAlt={painting.imgAlt}
+                        imgSrc={painting.imgSrc}
+                    >
+                        <h5 className="text-2xl font-bold tracking-tight text-rose-900">
+                            {painting.title}
+                        </h5>
+                        <p className="font-normal text-gray-700 italic">
+                            "{painting.quote}"
+                        </p>
 
-                <Card
-                    className="max-w-sm bg-rose-300 border-none"
-                    imgAlt="Meaningful alt text for an image that is not purely decorative"
-                    imgSrc={iteration1}
-                >
-                    <h5 className="text-2xl font-bold tracking-tight text-rose-900">
-                        Iteration 1 Collection - 2023
-                    </h5>
-                    <p className="font-normal text-gray-700 ">
-                        "Organic growth characterized with gold and flowing ink."
-                    </p>
+                        {
+                            painting.type == "Collection" ?
+                                <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href='#'>
+                                    View Collection
+                                </a> :
+                                <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href='#'>
+                                    View Piece
+                                </a>
+                        }
 
-                    <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href='#'>
-                        View Collection
-                    </a>
-                </Card>
+                    </Card>
+                ))}
 
-                <Card
-                    className="max-w-sm bg-rose-300 border-none"
-                    imgAlt="Meaningful alt text for an image that is not purely decorative"
-                    imgSrc={cityofroses}
-                >
-                    <h5 className="text-2xl font-bold tracking-tight text-rose-900">
-                        City of Roses - 2023
-                    </h5>
-                    <p className="font-normal text-gray-700">
-                        "A love letter to my hometown."
-                    </p>
-                    <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href='#'>
-                        View Piece
-                    </a>
-                </Card>
-
-                <Card
-                    className="max-w-sm bg-rose-300 border-none"
-                    imgAlt="Meaningful alt text for an image that is not purely decorative"
-                    imgSrc={colourvision}
-                >
-                    <h5 className="text-2xl font-bold tracking-tight text-rose-900">
-                        Colour Vision - 2020
-                    </h5>
-                    <p className="font-normal text-gray-700">
-                        "Colour to the horizon."
-                    </p>
-                    <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href='#'>
-                        View Piece
-                    </a>
-                </Card>
-
-                <Card
-                    className="max-w-sm bg-rose-300 border-none"
-                    imgAlt="Meaningful alt text for an image that is not purely decorative"
-                    imgSrc={tempinst}
-                >
-                    <h5 className="text-2xl font-bold tracking-tight text-rose-900">
-                        Temporary Instance - 2023
-                    </h5>
-                    <p className="font-normal text-gray-700 ">
-                        "Made in a moment."
-                    </p>
-                    <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href='#'>
-                        View Piece
-                    </a>
-                </Card>
             </div>
 
         </div>
