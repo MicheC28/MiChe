@@ -37,7 +37,7 @@ function NavBar() {
                             <a href="#" className="block text-white rounded-sm  hover:text-rose-300 p-0">MiChe</a>
                         </li>
                         <li>
-                            <a href="#" className="block text-white rounded-sm  hover:text-emerald-200 p-0">Contact</a>
+                            <a href="mailto:m89chen@uwaterloo.ca" className="block text-white rounded-sm  hover:text-emerald-200 p-0">Contact</a>
                         </li>
                     </ul>
                 </div>

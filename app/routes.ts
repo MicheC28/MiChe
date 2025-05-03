@@ -6,5 +6,6 @@ export default [
     route("/projects/digitalclipboard", "routes/digitalclipboard.tsx"),
     route("/projects/alertingmedicationcase", "routes/alertingmedicationcase.tsx"),
     route("/projects/windsorhousing", "routes/windsorhousing.tsx"),
-    route("/projects/rainyriches", "routes/rainyriches.tsx")
+    route("/projects/rainyriches", "routes/rainyriches.tsx"),
+    route("/miche", "routes/miche-home.tsx")
 ] satisfies RouteConfig;
