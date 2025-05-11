@@ -16,7 +16,7 @@ function NavBar() {
                         </li>
                         <li className="relative group">
                             <a href="/projects" className="block text-white rounded-sm  hover:text-emerald-200 p-0">Projects</a>
-                            <div id="dropdownNavbar" className="z-15 hidden group-hover:block absolute -left-7 top-full font-normal bg-teal-700 rounded-lg shadow-sm w-40">
+                            <div id="dropdownNavbar" className="z-15 hidden group-hover:block absolute -left-7 top-full font-normal bg-teal-700 rounded-lg w-40">
                                 <ul className="py-2 text-sm text-white" aria-labelledby="dropdownLargeButton">
                                     <li>
                                         <a href="/projects/digitalclipboard" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Digital Clipboard</a>
@@ -33,8 +33,27 @@ function NavBar() {
                                 </ul>
                             </div>
                         </li>
-                        <li>
-                            <a href="#" className="block text-white rounded-sm  hover:text-rose-300 p-0">MiChe</a>
+                        <li className="relative group">
+                            <a href="/miche" className="block text-white rounded-sm  hover:text-rose-300 p-0">MiChe</a>
+                            <div id="dropdownNavbar" className="z-15 hidden group-hover:block absolute -left-7 top-full font-normal bg-teal-700 rounded-lg w-40">
+                                <ul className="py-2 text-sm text-white" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="/miche/minis-collection" className="block px-4 py-2 hover:bg-teal-900">Minis Collection - 2024</a>
+                                    </li>
+                                    <li>
+                                        <a href="/miche/city-of-roses" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">City of Roses - 2023</a>
+                                    </li>
+                                    <li>
+                                        <a href="/miche/iteration1-collection" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Iteration 1 Collection - 2023</a>
+                                    </li>
+                                    <li>
+                                        <a href="/miche/temporary-instance" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Temporary Instance - 2023</a>
+                                    </li>
+                                    <li>
+                                        <a href="/miche/colour-vision" className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white">Colour Vision - 2020</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a href="mailto:m89chen@uwaterloo.ca" className="block text-white rounded-sm  hover:text-emerald-200 p-0">Contact</a>

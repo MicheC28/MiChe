@@ -1,11 +1,9 @@
-import micheLogo from "./MiChe_logo.jpg";
 import { Card } from "flowbite-react";
 import colourvision from "./MiChe_ColourVision.jpg";
 import minis from "./MiChe_Mini_All.jpg";
 import cityofroses from "./MiChe_CityOfRoses.jpg";
 import iteration1 from "./MiChe_Iteration1_Wall-Mount.jpg";
 import tempinst from "./MiChe_Temporary-Instance.jpg";
-import { color } from "framer-motion";
 
 
 
@@ -13,43 +11,53 @@ export default function MiCheHomePage() {
 
     const paintings = [
         {
+            id: 1,
             imgAlt: "Four arcylic paintings of red flowers",
             imgSrc: minis,
             type: "Collection",
             title: "Minis Collection - 2024",
-            quote: "test test"
+            quote: "Made in a moment.",
+            link: "/miche/minis-collection"
         },
 
         {
+            id: 2,
             imgAlt: "",
             imgSrc: cityofroses,
             type: "Piece",
             title: "City of Roses - 2023",
-            quote: "A love letter to my hometown."
+            quote: "A love letter to my hometown.",
+            link: "/miche/city-of-roses"
         },
 
         {
+            id: 3,
             imgAlt: "",
             imgSrc: colourvision,
             type: "Piece",
             title: "Colour Vision - 2020",
-            quote: "Colour to the horizon."
+            quote: "Colour to the horizon.",
+            link: "/miche/colour-vision"
         },
 
         {
+            id: 4,
             imgAlt: "",
             imgSrc: iteration1,
             type: "Collection",
             title: "Iteration 1 Collection - 2023",
-            quote: "Organic growth characterized with gold and flowing ink."
+            quote: "Organic growth characterized with gold and flowing ink.",
+            link: "/miche/iteration1-collection"
         },
 
         {
+            id: 5,
             imgAlt: "",
             imgSrc: tempinst,
             type: "Piece",
             title: "Temporary Instance - 2023",
-            quote: "Made in a Moment."
+            quote: "Made in a Moment.",
+            link: "/miche/temporary-instance"
         },
     ]
 
@@ -76,6 +84,7 @@ export default function MiCheHomePage() {
 
                 {paintings.map((painting) => (
                     <Card
+                        key={painting.id}
                         className="max-w-sm bg-rose-300 border-2 border-transparent hover:border-white transition duration-300 "
                         imgAlt={painting.imgAlt}
                         imgSrc={painting.imgSrc}
@@ -89,10 +98,10 @@ export default function MiCheHomePage() {
 
                         {
                             painting.type == "Collection" ?
-                                <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href='#'>
+                                <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href={painting.link}>
                                     View Collection
                                 </a> :
-                                <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href='#'>
+                                <a className="p-3 bg-rose-900 rounded-xl text-center text-rose-300 font-bold hover:cursor-pointer hover:bg-rose-950 transition duration-300" href={painting.link}>
                                     View Piece
                                 </a>
                         }
@@ -102,6 +111,9 @@ export default function MiCheHomePage() {
 
             </div>
 
+            <div className="h-15"></div>
         </div>
+
+
     )
 }

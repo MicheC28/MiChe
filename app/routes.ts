@@ -7,5 +7,10 @@ export default [
     route("/projects/alertingmedicationcase", "routes/alertingmedicationcase.tsx"),
     route("/projects/windsorhousing", "routes/windsorhousing.tsx"),
     route("/projects/rainyriches", "routes/rainyriches.tsx"),
-    route("/miche", "routes/miche-home.tsx")
+    route("/miche", "routes/miche-home.tsx"),
+    route("/miche/colour-vision", "routes/miche-colourvision.tsx"),
+    route("/miche/minis-collection", "routes/miche-minis-collection.tsx"),
+    route("/miche/iteration1-collection", "routes/miche-iteration1-collection.tsx"),
+    route("/miche/city-of-roses", "routes/miche-cityofroses.tsx"),
+    route("/miche/temporary-instance", "routes/miche-temporary-instance.tsx")
 ] satisfies RouteConfig;
