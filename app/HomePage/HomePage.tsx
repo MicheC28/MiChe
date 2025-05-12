@@ -55,9 +55,9 @@ function HomePage({ className }: HomePageProps) {
 
 
             <div className="relative flex flex-col z-20 gap-y-5">
-                <div className="h-15"></div>
+                <div className="md:h-15 h-20"></div>
 
-                <div className="flex flex-col justify-evenly items-center mx-20 md:mx-40 gap-y-5">
+                <div className="flex flex-col justify-evenly items-center mx-10 md:mx-40 gap-y-5">
 
                     <div className=" bg-black/60 p-6 rounded-xl w-full flex flex-col justify-center items-center">
                         <div className="flex flex-col md:flex-row justify-center items-center">
@@ -97,7 +97,7 @@ function HomePage({ className }: HomePageProps) {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:justify-evenly items-center mx-20 md:mx-40 bg-black/60 p-8 rounded-xl gap-y-5">
+                <div className="flex flex-col md:justify-evenly items-center mx-10 md:mx-40 bg-black/60 p-8 rounded-xl gap-y-5">
 
                     <p className="text-xl text-emerald-200 text-center font-bold">Skills</p>
 
@@ -150,7 +150,7 @@ function HomePage({ className }: HomePageProps) {
                 </div>
 
 
-                <div className="flex flex-col justify-evenly mx-20 md:mx-40 gap-y-5">
+                <div className="flex flex-col justify-evenly mx-10 md:mx-40 gap-y-5">
                     <p className="text-xl text-center text-emerald-200 bg-black/60 p-4 rounded-xl font-bold">Projects</p>
 
                     <div className="embla__viewport rounded-xl heigh" ref={emblaRef}>
@@ -216,7 +216,7 @@ function HomePage({ className }: HomePageProps) {
 
                 </div>
 
-                <div className="mx-20 md:mx-40  bg-black/60 p-16 rounded-xl flex flex-col justify-evenly gap-y-5">
+                <div className="mx-10 md:mx-40  bg-black/60 p-16 rounded-xl flex flex-col justify-evenly gap-y-5">
                     <p className="text-xl text-emerald-200 text-center font-bold">Work Experience</p>
 
                     <ol className="relative border-s border-teal-900 dark:border-emerald-200">
