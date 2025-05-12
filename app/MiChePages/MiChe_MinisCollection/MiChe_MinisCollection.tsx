@@ -9,12 +9,12 @@ export default function MiChe_MinisCollection() {
     return (
 
         <div className="relative z-10">
-            <div className="h-30 md:h-20"></div>
+            <div className="h-30 md:h-10"></div>
 
             <div className="gap-y-5 flex flex-col">
                 <MiCheBreadcrumb projectName="Minis Collection - 2023" />
 
-                <div className="bg-black/60 mx-20 md:mx-40 rounded-xl p-8 gap-y-5 flex flex-col justify-evenly items-center">
+                <div className="bg-black/60 mx-10 md:mx-40 rounded-xl p-8 gap-y-5 flex flex-col justify-evenly items-center">
 
                     <div className="flex flex-col md:flex-row gap-5 items-end justify-center">
                         <div className="md:w-1/5 gap-y-5 flex flex-col">

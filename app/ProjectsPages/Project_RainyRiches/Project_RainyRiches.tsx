@@ -6,12 +6,12 @@ import RR_secondary from "./RainyRiches2.png";
 function ProjectRainyRiches() {
     return (
         <div className="relative z-10 flex flex-col gap-5">
-            <div className="h-15"></div>
+            <div className="h-20 md:h-15"></div>
 
             <ProjectBreadcrumb projectName={"Rainy Riches Game"} />
 
 
-            <div className="mx-20 md:mx-40 bg-black/60 rounded-xl flex flex-col justify-evenly items-center gap-y-5 p-8">
+            <div className="mx-10 md:mx-40 bg-black/60 rounded-xl flex flex-col justify-evenly items-center gap-y-5 p-8">
                 <p className="text-xl text-emerald-200 font-bold">
                     Rainy Riches Game
                 </p>
