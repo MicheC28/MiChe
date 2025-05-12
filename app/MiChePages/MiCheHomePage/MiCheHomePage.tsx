@@ -67,7 +67,7 @@ export default function MiCheHomePage() {
 
             <div className="h-15"></div>
 
-            <div className="mx-20 bg-black/60 flex flex-col gap-y-5 p-8 justify-evenly items-center rounded-xl">
+            <div className="mx-20 md:mx-40 bg-black/60 flex flex-col gap-y-5 p-8 justify-evenly items-center rounded-xl">
                 <p className="text-xl text-rose-300 font-bold">MiChe Art Collection</p>
                 {/* <img className="w-20 rounded-xl" src={micheLogo} /> */}
 
@@ -79,7 +79,7 @@ export default function MiCheHomePage() {
                 <p className="text-sm italic text-gray-500">"Colour Vision", 2020. Acrylic on Canvas.</p>
             </div>
 
-            <div className="mx-20 bg-black/60 rounded-xl flex md:flex-row flex-col gap-5 p-8 flex-wrap justify-center">
+            <div className="mx-20 md:mx-40 bg-black/60 rounded-xl flex md:flex-row flex-col gap-5 p-8 flex-wrap justify-center">
 
 
                 {paintings.map((painting) => (

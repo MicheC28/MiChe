@@ -57,13 +57,16 @@ function HomePage({ className }: HomePageProps) {
             <div className="relative flex flex-col z-20 gap-y-5">
                 <div className="h-15"></div>
 
-                <div className="flex flex-col justify-evenly items-center mx-20 gap-y-5">
+                <div className="flex flex-col justify-evenly items-center mx-20 md:mx-40 gap-y-5">
 
                     <div className=" bg-black/60 p-6 rounded-xl w-full flex flex-col justify-center items-center">
-                        <div>
+                        <div className="flex flex-col md:flex-row justify-center items-center">
                             <img src={headshot} className="w-100" />
-                            <TypingAnimation className="text-xl text-rose-300 font-bold">Michelle Chen</TypingAnimation>
-                            <TypingAnimation className="text-white text-base"> Computer Engineering @UWaterloo</TypingAnimation>
+
+                            <div className="md:w-90">
+                                <TypingAnimation className="text-2xl text-rose-300 font-bold">Michelle Chen</TypingAnimation>
+                                <TypingAnimation className="text-white text-base"> Computer Engineering @UWaterloo</TypingAnimation>
+                            </div>
                         </div>
 
                     </div>
@@ -73,9 +76,9 @@ function HomePage({ className }: HomePageProps) {
 
                             I'm a passionate Computer Engineering student at the University of Waterloo. I'm interested in designing software and hardware for applications that allow for better connection between the physical and technological world.
                             <br /><br />
-                            I've worked with web development, live data processing, and embedded development with STM32 and Arduino .
+                            I've worked with fullstack development, live data processing, and embedded development with STM32 and Arduino .
                             <br /><br />
-                            In my spare time, I love working on my personal projects, painting and eating good food.😊
+                            In my spare time, I love working on my personal projects, painting and eating good food. If you're interested in art too, check out the <b>MiChe</b> tab!
                         </p>
 
                         <div className="flex md:flex-row flex-col justify-evenly md:gap-x-5 gap-x-0 gap-y-5">
@@ -94,7 +97,7 @@ function HomePage({ className }: HomePageProps) {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:justify-evenly items-center mx-20 bg-black/60 p-8 rounded-xl gap-y-5">
+                <div className="flex flex-col md:justify-evenly items-center mx-20 md:mx-40 bg-black/60 p-8 rounded-xl gap-y-5">
 
                     <p className="text-xl text-emerald-200 text-center font-bold">Skills</p>
 
@@ -147,7 +150,7 @@ function HomePage({ className }: HomePageProps) {
                 </div>
 
 
-                <div className="flex flex-col justify-evenly mx-20 gap-y-5">
+                <div className="flex flex-col justify-evenly mx-20 md:mx-40 gap-y-5">
                     <p className="text-xl text-center text-emerald-200 bg-black/60 p-4 rounded-xl font-bold">Projects</p>
 
                     <div className="embla__viewport rounded-xl heigh" ref={emblaRef}>
@@ -213,7 +216,7 @@ function HomePage({ className }: HomePageProps) {
 
                 </div>
 
-                <div className="mx-20  bg-black/60 p-16 rounded-xl flex flex-col justify-evenly gap-y-5">
+                <div className="mx-20 md:mx-40  bg-black/60 p-16 rounded-xl flex flex-col justify-evenly gap-y-5">
                     <p className="text-xl text-emerald-200 text-center font-bold">Work Experience</p>
 
                     <ol className="relative border-s border-teal-900 dark:border-emerald-200">

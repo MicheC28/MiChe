@@ -12,7 +12,7 @@ export default function MiChe_ColourVision() {
             <div className="gap-y-5 flex flex-col">
                 <MiCheBreadcrumb projectName="Colour Vision - 2020" />
 
-                <div className="bg-black/60 mx-20 rounded-xl p-8 gap-y-5 flex flex-col justify-evenly items-center">
+                <div className="bg-black/60 mx-20 md:mx-40 rounded-xl p-8 gap-y-5 flex flex-col justify-evenly items-center">
                     <div className="md:w-3/5">
                         <Lens lensSize={170} zoomFactor={1.7} >
                             <img src={colourvision} />

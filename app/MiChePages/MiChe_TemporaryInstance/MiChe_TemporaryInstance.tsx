@@ -10,7 +10,7 @@ export default function MiChe_TemporaryInstance() {
             <div className="gap-y-5 flex flex-col">
                 <MiCheBreadcrumb projectName="Temporary Instance - 2023" />
 
-                <div className="bg-black/60 mx-20 rounded-xl p-8 gap-y-5 flex flex-col justify-evenly items-center">
+                <div className="bg-black/60 mx-20 md:mx-40 rounded-xl p-8 gap-y-5 flex flex-col justify-evenly items-center">
 
                     <div className="flex flex-col md:flex-row gap-5 items-end justify-center">
                         <div className="md:w-2/5 gap-y-5 flex flex-col">
