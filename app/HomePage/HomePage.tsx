@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import headshot from './headshot.noback.png';
 import github_logo from './github_logo.png';
 import linkedin_logo from './linkedin-logo-png-2026.png';
@@ -16,15 +16,10 @@ import cs_logo from './cs_logo.png';
 import react_logo from './react_logo.png';
 import angular_logo from './angular_logo.png';
 import ts_logo from './ts_logo.png';
-import portfolio from './PortfolioSite_1.png'
 import tailwind_logo from './tailwind_logo.svg';
-// import { Carousel } from "flowbite-react";
-// import '../../node_modules/flowbite/dist/flowbite.css';
 import useEmblaCarousel from 'embla-carousel-react'
 import Marquee from "react-fast-marquee";
 import { TypingAnimation } from "../../components/magicui/typing-animation";
-import NavBar from "~/NavBar/NavBar";
-import { FlickeringGrid } from "components/magicui/flickering-grid";
 
 
 type HomePageProps = {
@@ -43,17 +38,6 @@ function HomePage({ className }: HomePageProps) {
 
     return (
         <div>
-            {/* <NavBar />
-            <FlickeringGrid
-                className="absolute inset-0 z-0"
-                squareSize={4}
-                gridGap={10}
-                color="#c587b8"
-                maxOpacity={0.6}
-                flickerChance={0.4}
-            /> */}
-
-
             <div className="relative flex flex-col z-20 gap-y-5">
                 <div className="md:h-15 h-20"></div>
 
