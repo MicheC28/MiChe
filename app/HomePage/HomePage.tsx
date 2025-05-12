@@ -25,6 +25,7 @@ import Marquee from "react-fast-marquee";
 import { TypingAnimation } from "../../components/magicui/typing-animation";
 import NavBar from "~/NavBar/NavBar";
 import { FlickeringGrid } from "components/magicui/flickering-grid";
+import { MagicCard } from "components/magicui/magic-card";
 
 
 type HomePageProps = {
@@ -59,17 +60,21 @@ function HomePage({ className }: HomePageProps) {
 
                 <div className="flex flex-col justify-evenly items-center mx-10 md:mx-40 gap-y-5">
 
-                    <div className=" bg-black/60 p-6 rounded-xl w-full flex flex-col justify-center items-center">
-                        <div className="flex flex-col md:flex-row justify-center items-center">
-                            <img src={headshot} className="w-100" />
+                    <MagicCard gradientColor={"#2487"}
+                        className="rounded-xl bg-red-200">
+                        <div className=" bg-black/60 p-6 rounded-xl w-full flex flex-col justify-center items-center">
+                            <div className="flex flex-col md:flex-row justify-center items-center">
+                                <img src={headshot} className="w-100" />
 
-                            <div className="md:w-90">
-                                <TypingAnimation className="text-2xl text-rose-300 font-bold">Michelle Chen</TypingAnimation>
-                                <TypingAnimation className="text-white text-base"> Computer Engineering @UWaterloo</TypingAnimation>
+                                <div className="md:w-90">
+                                    <TypingAnimation className="text-2xl text-rose-300 font-bold">Michelle Chen</TypingAnimation>
+                                    <TypingAnimation className="text-white text-base"> Computer Engineering @UWaterloo</TypingAnimation>
+                                </div>
                             </div>
-                        </div>
 
-                    </div>
+                        </div>
+                    </MagicCard>
+
                     <div className="flex flex-col justify-evenly  bg-black/60 p-6 rounded-xl w-full">
                         <p className="text-xl text-emerald-200 text-center font-bold" >About me</p>
                         <p className="text-base text-white m-5" >
