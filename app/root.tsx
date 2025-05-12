@@ -52,11 +52,11 @@ export default function App() {
 
       <FlickeringGrid
         className="absolute inset-0 z-0"
-        squareSize={4}
-        gridGap={10}
-        color="#c587b8"
-        maxOpacity={0.6}
-        flickerChance={0.4}
+        squareSize={8}
+        gridGap={5}
+        color="#48b3a4"
+        maxOpacity={0.4}
+        flickerChance={0.2}
       />
 
       <NavBar />
