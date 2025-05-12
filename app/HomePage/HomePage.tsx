@@ -221,7 +221,9 @@ function HomePage({ className }: HomePageProps) {
                             <div className="absolute w-3 h-3 bg-emerald-200 rounded-full mt-1.5 -start-1.5 border border-teal-900"></div>
                             <time className="mb-1 text-sm font-normal leading-none text-emerald-200">Jan-Apr 2025</time>
                             <h3 className="text-lg font-semibold text-white">Software Developer Co-op @ Rocket Innovation Studio</h3>
-                            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Designed and implemented real-time audio signal processing systems using STM32 microcontrollers, utilizing ADC with DMA, timers, and I2C to capture and transmit microphone signals. Handled and processed large-scale sensor data streams using Pandas and Matplotlib, applying low-pass and moving average filters to denoise live data with 80% noise reduction.</p>
+                            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                                Worked on backend development using C# and ASP.NET Core. Implemented JWT authentication and custom role-based access control with Auth0. Refactored API endpoints to use async programming and updated 20+ comprehensive unit tests using MSTest, xUnit, and NSubstitute. Participated in simple and blue-green production deployments with CI/CD pipelines in Azure DevOps while collaborating in an Agile environment.
+                            </p>
 
                         </li>
                         <li className="mb-10 ms-4">
