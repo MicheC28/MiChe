@@ -42,7 +42,7 @@ function HomePage({ className }: HomePageProps) {
 
         <div className="flex flex-col justify-evenly items-center mx-10 md:mx-50 gap-y-5  bg-black/60 p-8 rounded-xl">
           <div className=" bg-black/60 p-6  mx-10 md:mx-50 rounded-xl w-full flex flex-col justify-center items-center">
-            <div className="flex flex-col md:flex-row justify-center items-center">
+            <div className="flex flex-col lg:flex-row justify-center items-center">
               <img src={headshot} className="w-100" />
 
               <div className="md:w-90 flex flex-col justify-center gap-y-5">
@@ -75,7 +75,7 @@ function HomePage({ className }: HomePageProps) {
         </div>
 
         <div className="flex flex-col md:justify-evenly items-center mx-10 md:mx-50 bg-black/60 p-8 rounded-xl gap-y-5">
-          <div className="mx-10 bg-black/60 p-16 rounded-xl flex flex-col justify-evenly gap-y-5 w-full">
+          <div className="mx-10 bg-black/60 md:p-16 p-5 rounded-xl flex flex-col justify-evenly gap-y-5 w-full">
             <p className="text-xl text-emerald-200 text-center font-bold">
               Work Experience
             </p>
@@ -131,7 +131,7 @@ function HomePage({ className }: HomePageProps) {
             </ol>
           </div>
 
-          <div className="mx-10 bg-black/60 p-16 rounded-xl flex flex-col justify-evenly gap-y-5 w-full">
+          <div className="mx-10 bg-black/60 md:p-16 p-5 rounded-xl flex flex-col justify-evenly gap-y-5 w-full">
             <p className="text-xl text-emerald-200 text-center font-bold">
               Skills
             </p>
