@@ -20,4 +20,5 @@ export default [
   route("/miche/city-of-roses", "routes/miche-cityofroses.tsx"),
   route("/miche/temporary-instance", "routes/miche-temporary-instance.tsx"),
   route("/projects/consoletetris", "routes/consoletetris.tsx"),
+  route("/projects/mappingviaroutes", "routes/mappingviaroutes.tsx"),
 ] satisfies RouteConfig;

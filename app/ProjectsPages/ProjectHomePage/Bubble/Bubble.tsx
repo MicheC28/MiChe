@@ -5,6 +5,7 @@ import medicationcase_project from "../../../images/Projects/AlertCase2.png";
 import rr_project from "../../../images/Projects/RainyRiches.png";
 import windsorhousign_project from "../../../images/Projects/windsor.jpeg";
 import tetris_project from "../../../images/Projects/Tetris.png";
+import mappingviaroutes_project from "../../../images/Projects/VIA.png";
 
 export default function BubbleGrid() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -166,7 +167,15 @@ export default function BubbleGrid() {
       href: "/projects/consoletetris",
       img: tetris_project,
       imgAlt: "Console Tetris",
-      isCenter: true,
+      isCenter: false,
+    },
+
+    {
+      type: "link",
+      href: "/projects/mappingviaroutes",
+      img: mappingviaroutes_project,
+      imgAlt: "Mapping VIA Routes",
+      isCenter: false,
     },
 
     {
@@ -184,7 +193,6 @@ export default function BubbleGrid() {
       text: "overly complicated capta",
     },
 
-    { type: "empty" },
     { type: "empty" },
     { type: "empty" },
 

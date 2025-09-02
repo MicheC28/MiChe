@@ -79,6 +79,14 @@ function NavBar() {
                       Console Tetris
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="/projects/mappingviaroutes"
+                      className="block px-4 py-2 hover:bg-teal-900 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >
+                      Mapping VIA Routes
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>

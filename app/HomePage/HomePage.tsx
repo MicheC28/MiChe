@@ -11,7 +11,7 @@ import clipboard_project from "../images/HomePage/digitalClipboard_resized.png";
 import alertcase_project from "../images/HomePage/AlertCase2_resized.png";
 import windsorhousing_project from "../images/HomePage/windsor_resized.jpeg";
 import consoletetris_project from "../images/HomePage/tetris_resized.png";
-
+import mappingviaroutes_project from "../images/HomePage/VIA_resized.png";
 import MiChe_CityOfRoses from "../images/HomePage/MiChe_CityOfRoses_resized.jpg";
 import MiChe_ColourVision from "../images/HomePage/MiChe_ColourVision_resized.jpg";
 import MiChe_WallMount from "../images/HomePage/MiChe_Iteration1_Wall-Mount_resized.jpg";
@@ -176,7 +176,7 @@ function HomePage({ className }: HomePageProps) {
               ref={techEmblaRef}
             >
               <div className="embla__container ">
-                <div className="embla__slide h-100 w-auto flex flex-row justify-center">
+                {/* <div className="embla__slide h-100 w-auto flex flex-row justify-center">
                   <a
                     href="/projects/rainyriches"
                     className="homepage-carousel-link w-fit h-fit relative cursor-grab"
@@ -191,7 +191,7 @@ function HomePage({ className }: HomePageProps) {
                       </p>
                     </div>
                   </a>
-                </div>
+                </div> */}
 
                 <div className="embla__slide h-100 w-auto flex flex-row justify-center ">
                   <a
@@ -211,7 +211,7 @@ function HomePage({ className }: HomePageProps) {
                   </a>
                 </div>
 
-                <div className="embla__slide h-100 w-auto flex flex-row justify-center ">
+                {/* <div className="embla__slide h-100 w-auto flex flex-row justify-center ">
                   <a
                     href="/projects/digitalclipboard"
                     className="homepage-carousel-link w-fit h-fit relative cursor-grab"
@@ -226,7 +226,7 @@ function HomePage({ className }: HomePageProps) {
                       </p>
                     </div>
                   </a>
-                </div>
+                </div> */}
 
                 <div className="embla__slide h-100 w-auto flex flex-row justify-center">
                   <a
@@ -241,6 +241,24 @@ function HomePage({ className }: HomePageProps) {
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
                       <p className="text-white opacity-100 text-xl">
                         Windsor Housing Predictor
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div className="embla__slide h-100 w-auto flex flex-row justify-center">
+                  <a
+                    href="/projects/mappingviaroutes"
+                    className="homepage-carousel-link w-fit h-fit relative cursor-grab"
+                  >
+                    <img
+                      src={mappingviaroutes_project}
+                      className="w-full xl h-auto p-0 rounded-xl"
+                    />
+
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
+                      <p className="text-white opacity-100 text-xl">
+                        Mapping VIA Routes
                       </p>
                     </div>
                   </a>

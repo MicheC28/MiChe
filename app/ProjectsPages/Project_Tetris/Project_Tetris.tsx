@@ -1,8 +1,6 @@
 import github_icon from "../../images/Socials/github_logo.png";
 import ProjectBreadcrumb from "../Project_Breadcrumb/projectBreadcrumb";
 import main from "../../images/Projects/Tetris.png";
-import RR_secondary from "../../images/Projects/RainyRiches2.png";
-import test from "node:test";
 
 function ProjectConsoleTetris() {
   return (
