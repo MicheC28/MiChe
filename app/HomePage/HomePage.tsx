@@ -10,6 +10,7 @@ import RR_project from "../images/HomePage/RainyRiches_resized.png";
 import clipboard_project from "../images/HomePage/digitalClipboard_resized.png";
 import alertcase_project from "../images/HomePage/AlertCase2_resized.png";
 import windsorhousing_project from "../images/HomePage/windsor_resized.jpeg";
+import consoletetris_project from "../images/HomePage/tetris_resized.png";
 
 import MiChe_CityOfRoses from "../images/HomePage/MiChe_CityOfRoses_resized.jpg";
 import MiChe_ColourVision from "../images/HomePage/MiChe_ColourVision_resized.jpg";
@@ -240,6 +241,24 @@ function HomePage({ className }: HomePageProps) {
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
                       <p className="text-white opacity-100 text-xl">
                         Windsor Housing Predictor
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div className="embla__slide h-100 w-auto flex flex-row justify-center">
+                  <a
+                    href="/projects/consoletetris"
+                    className="homepage-carousel-link w-fit h-fit relative cursor-grab"
+                  >
+                    <img
+                      src={consoletetris_project}
+                      className="w-full xl h-auto p-0 rounded-xl"
+                    />
+
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-70 bg-black transition duration-300 hover:border-2 border-emerald-200 rounded-xl">
+                      <p className="text-white opacity-100 text-xl">
+                        Console Tetris
                       </p>
                     </div>
                   </a>
