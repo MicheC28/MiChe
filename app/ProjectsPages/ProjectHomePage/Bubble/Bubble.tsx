@@ -4,6 +4,7 @@ import clipboard_project from "../../../images/Projects/digitalClipboard.png";
 import medicationcase_project from "../../../images/Projects/AlertCase2.png";
 import rr_project from "../../../images/Projects/RainyRiches.png";
 import windsorhousign_project from "../../../images/Projects/windsor.jpeg";
+import tetris_project from "../../../images/Projects/Tetris.png";
 
 export default function BubbleGrid() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -161,6 +162,14 @@ export default function BubbleGrid() {
   // Grid items as defined in the original HTML
   const gridItems: GridItem[] = [
     {
+      type: "link",
+      href: "/projects/consoletetris",
+      img: tetris_project,
+      imgAlt: "Console Tetris",
+      isCenter: true,
+    },
+
+    {
       type: "text",
       text: "to do list application because I have the memory of a goldfish",
     },
@@ -175,7 +184,6 @@ export default function BubbleGrid() {
       text: "overly complicated capta",
     },
 
-    { type: "empty" },
     { type: "empty" },
     { type: "empty" },
     { type: "empty" },
