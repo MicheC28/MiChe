@@ -33,8 +33,8 @@ function ProjectWindsorHousing() {
         </ul>
 
         <a
-          href="github"
-          className="border-teal-950 border-4 hover:border-emerald-200 p-2 rounded-xl transition duration-200 hover:bg-emerald-200 bg-transparent"
+          href="https://github.com/MicheC28/Windsor-Housing-Predictor"
+          className="border-emerald-200 p-2 rounded-xl transition duration-200 bg-emerald-200"
         >
           <img src={github_icon} className="homepage-social-icon " />
         </a>

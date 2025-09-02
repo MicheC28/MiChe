@@ -38,13 +38,6 @@ function ProjectAlertingMedicationCase() {
           </li>
         </ul>
 
-        <a
-          href="github"
-          className="border-teal-950 border-4 hover:border-emerald-200 p-2 rounded-xl transition duration-200 hover:bg-emerald-200 bg-transparent"
-        >
-          <img src={github_icon} className="homepage-social-icon " />
-        </a>
-
         <img src={demoSecondary} className="w-2/3 rounded-xl" />
 
         <p className="text-white text-base md:mx-30">
